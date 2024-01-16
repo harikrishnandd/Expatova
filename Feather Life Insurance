@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+            overflow: hidden;
+		}
+        
+		.advertisement {
+			font-family: 'Roboto', sans-serif;
+			background-color: #ffffff;
+			border: 1px solid #cccccc;
+			border-radius: 8px;
+			padding: 10px;
+			width: 90%;
+			display: flex; /* Display children side by side */
+		}
+
+		.advertisement-image {
+			max-width: 40%; /* Adjust the image width */
+			height: 20%;
+			margin-top: 10%;   
+            border-radius: 8px;
+		}
+
+		.advertisement-text {
+			padding: 10px;
+			flex: 1; /* Allow the text to take up remaining space */
+		}
+
+		.heading {
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.sub-title {
+			font-size: 16px;
+			font-style: italic;
+			margin-top: 10px;
+            line-height: 1.5;
+		}
+
+		.advantages {
+			font-size: 14px;
+		}
+
+		.advertisement-button {
+			display: block;
+			background-color: #1439EC;
+			color: #ffffff;
+			padding: 10px;
+			text-align: center;
+			border: none;
+			border-radius: 8px;
+			text-decoration: none;
+			cursor: pointer;
+			margin: 10px;
+			box-shadow: 0 0 10px rgba(20, 57, 236, 0.5);
+		}
+        
+        ul {
+            list-style: none;
+            line-height: 1.5;
+        }
+            .disclaimer {
+        font-size: 14px;
+        font-family: "Roboto", sans-serif;
+        color: #000000;
+        font-weight: lighter;
+    }
+
+
+
+		@media (max-width: 600px) {
+			.advertisement-text {
+				max-width: 100%;
+			}
+			.advertisement-image {
+				display: none;
+			}
+		}
+
+		@media (max-width: 400px) {
+			.advertisement {
+				padding: 5px;
+			}
+		}
+
+		@media (max-width: 318px) {
+			.advertisement {
+				padding: 2px;
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="advertisement">
+			<div class="advertisement-text">
+				<div class="heading">Life insurance in Germany starting at €1.98 per month</div>
+				<div class="sub-title">Get coverage in 2 minutes. Cancel monthly.</div>
+				<ul class="advantages">
+					<li>&#10003; Covers Debt and Mortgage</li>
+					<li>&#10003; Lost income</li>
+					<li>&#10003; Child care and education</li>
+					<li>&#10003; Funeral expenses</li>
+				</ul>
+				<a href="https://feather-insurance.com/life-insurance?utm_source=Expatova" class="advertisement-button" target="blank">Discover Feather</a>
+                    <p class="disclaimer"><sup>*</sup>By clicking on this link and making a purchase, you help support us through a small commission, all without any extra expense on your part.</p>
+			</div>
+			<img class="advertisement-image" src="https://static.wixstatic.com/media/dc773a_b2823036d84848b1ab695bdd8635e301~mv2.png"  alt="Best tax filing app Germany">
+		</div>
+	</body>
+</html>
